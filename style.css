@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 .temperature {
-  flex-direction: column;
+  flex-direction: row;
 }
 .degree-section {
   display: flex;
@@ -35,4 +35,40 @@ body {
 }
 .degree-section h2 {
   font-size: 40px;
+}
+.temperature-description {
+  font-size: 40px;
+}
+@media screen and (max-width: 992px) {
+  .location,
+  .temperature {
+    font-size: 70%;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
+  }
+  .degree-section h2 {
+    font-size: 50px;
+  }
+  .temperature-description {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .location,
+  .temperature {
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    width: 135px;
+    height: 135px;
+  }
+  .degree-section h2 {
+    font-size: 60px;
+  }
+  .temperature-description {
+    font-size: 60px;
+  }
 }
